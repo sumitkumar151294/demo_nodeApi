@@ -1,0 +1,33 @@
+const status = {
+  UNEXPECTED_ERROR: 'Something went wrong!',
+  ID_WRONG: 'Either Email Id or Password is wrong, please try again.',
+  EMAIL_SEND: 'Email send successfully',
+  INVALID_TOKEN: 'token is invalid',
+  OK: 'OK',
+  PRODUCT_ADD:'Product add successfully',
+  PRODUCT_GET:'Product get successfully',
+  PRODUCT_UPDATE:'Product update successfully',
+  PRODUCT_DELETE:'Product delete successfully',
+  PRODUCT_GET_BY_CATEGORY:'Product get by category name',
+  PRODUCT_ALREADY_EXISTS:'Product with the same code already exists',
+  CATEGORY_ADD:'Category add successfully',
+  CATEGORY_GET:'Category get successfully',
+  CATEGORY_UPDATE:'Category update successfully',
+  CATEGORY_DELETE:'Category delete successfully',
+  CLIENT_ADD:'Client added successfully',
+  CLIENT_GET:'Client get successfully',
+  CLIENT_UPDATE:'Client update successfully',
+  CLIENT_DELETE:'Client delete successfully',
+  INVOICE_ADD:'Invoice add successfully',
+  INVOICE_GET:'Invoice get successfully',
+  INVOICE_UPDATE:'Invoice update successfully',
+  INVOICE_Delete:'Invoice delete successfully',
+  DATA_NOT_AVAILABLE: 'Data not found',
+  LOGIN_SUCCESS: 'Login successfully',
+  EMAIL_NOT_FOUND: "The Email Id that you've entered is not found, please try again.",
+  WRONG_PASSWORD: 'Incorrect old password',
+  PASSWORD_NOT_MATCH: 'New password and confirm password do not match',
+  PASSWORD_SUCCESS: 'Password updated successfully'
+};
+
+module.exports = status;
