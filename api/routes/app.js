@@ -15,6 +15,7 @@ app.use(cors());
 
 // Routes
 app.use('/user', authenticationRoute);
+app.use('/file_gs', financialRoute);
 
 app.use((req, res, next) => {
   const error = new Error('Not Found');

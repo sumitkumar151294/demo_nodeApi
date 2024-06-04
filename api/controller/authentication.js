@@ -6,7 +6,7 @@ const router = express.Router();
 router.post('/', async (req, res) => {
   try {
     res.json({
-data:{
+  data:{
   isloggedin:true
 }
     });
