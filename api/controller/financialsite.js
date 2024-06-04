@@ -21,13 +21,13 @@ router.post('/login', async (req, res) => {
 
         errorCode
         : 
-        "201",
+        "400",
         errorMessage
-        : 
-        "Login Successfully",
+        :
+        "Something Went Wring",
         httpStatusCode
         : 
-        "201"
+        "400"
 
     });
   } catch (err) {
