@@ -41,8 +41,8 @@ router.get('/module', async (req, res) => {
    
     res.json({
       "response": [{
-                    name:"DashBoard",
-                    icon:"dashBoard"
+                    name:"Dashboard",
+                    icon:"dashboard"
                   },
                   {
                     name:"Customer Segment",
