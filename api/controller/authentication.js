@@ -48,4 +48,31 @@ router.post('/login', async (req, res) => {
   }
 });
 
+router.post('/module', async (req, res) => {
+  try {
+   
+    res.json({
+      "response": [
+              "DashBoard",
+              "Customer",
+              "Product Content",
+              "Product Section",
+              "Add Coupon",
+              "Add bulk coupon",
+              "Dynamic coupon",
+              "Coupon List",
+              "Category Master",
+              "Deal Management",
+              "Deal List",
+              "Deal To Segment",
+              "Campaign Master"
+      ],
+      "httpStatusCode": "201",
+      "errorCode": "201",
+  });
+  } catch (err) {
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
 module.exports = router;
