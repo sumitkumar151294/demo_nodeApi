@@ -41,14 +41,74 @@ password:"123456"
     res.json({
 
         errorCode
-        : 
+        :
         "201",
         errorMessage
         :
         "Created Sucessfully",
         httpStatusCode
-        : 
+        :
         "201"
+
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});router.get('/getvariable', async (req, res) => {
+  try {
+    res.json({
+response:[{
+  variableName:"name",
+  variable:"@name",
+  date:"23/3/2024",
+  },{
+    variableName:"name",
+    variable:"@name",
+    date:"23/3/2024",
+    },{
+      variableName:"name",
+      variable:"@name",
+      date:"23/3/2024",
+      },{
+        variableName:"name",
+        variable:"@name",
+        date:"23/3/2024",
+        },{
+          variableName:"name",
+          variable:"@name",
+          date:"23/3/2024",
+          },{
+            variableName:"name",
+            variable:"@name",
+            date:"23/3/2024",
+            },{
+              variableName:"name",
+              variable:"@name",
+              date:"23/3/2024",
+              },{
+                variableName:"name",
+                variable:"@name",
+                date:"23/3/2024",
+                },{
+                  variableName:"name",
+                  variable:"@name",
+                  date:"23/3/2024",
+                  },{
+                    variableName:"name",
+                    variable:"@name",
+                    date:"23/3/2024",
+                    },{
+                      variableName:"name",
+                      variable:"@name",
+                      date:"23/3/2024",
+                      },{
+                        variableName:"name",
+                        variable:"@name",
+                        date:"23/3/2024",
+                        }],
+    httpStatusCode: "200",
+      errorCode: "200",
+      errorMessage: ""
 
     });
   } catch (err) {
