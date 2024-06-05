@@ -40,21 +40,59 @@ router.get('/module', async (req, res) => {
   try {
    
     res.json({
-      "response": [
-              "DashBoard",
-              "Customer",
-              "Product Content",
-              "Product Section",
-              "Add Coupon",
-              "Add bulk coupon",
-              "Dynamic coupon",
-              "Coupon List",
-              "Category Master",
-              "Deal Management",
-              "Deal List",
-              "Deal To Segment",
-              "Campaign Master"
-      ],
+      "response": [{
+                    name:"DashBoard",
+                    icon:"dashBoard"
+                  },
+                  {
+                    name:"Customer Segment",
+                    icon:"segment"
+                  },
+                  {
+                    name:"Product Content",
+                    icon:"content"
+                  },
+                  {
+                    name:"Product Section",
+                    icon:"section"
+                  },
+                  {
+                    name:"Add Coupon",
+                    icon:"Add"
+                  },
+                  {
+                    name:"Add bulk coupon",
+                    icon:"bulk"
+                  },
+                  {
+                    name:"Dynamic coupon",
+                    icon:"Dynamic"
+                  },
+                  {
+                    name:"Coupon List",
+                    icon:"list"
+                  },
+                  {
+                    name:"Category Master",
+                    icon:"2Category"
+                  },
+                  {
+                    name:"Deal Management",
+                    icon:"Deal"
+                  },
+                  {
+                    name:"Deal List",
+                    icon:"Deal"
+                  },
+                  {
+                    name:"Deal To Segment",
+                    icon:"customer2"
+                  },
+                  {
+                    name:"Campaign Master",
+                    icon:"master"
+                  }
+             ],
       "httpStatusCode": "201",
       "errorCode": "201",
   });
