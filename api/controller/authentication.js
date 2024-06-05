@@ -62,5 +62,43 @@ router.get('/module', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+router.get('/customerSegment', async (req, res) => {
+  try {
+   
+    res.json({
+      "response": [
+          {
+              "id": "#7899",
+              "segementName": "non-banner",
+              "currentStatus": "Non-Active",
+              "date": "15/2/2024"
+          },
+          {
+            "id": "#5677",
+            "segementName": "Header",
+            "currentStatus": "Non-Active",
+            "date": "14/2/2024"
+        },
+        {
+          "id": "#5678",
+          "segementName": "Supplier 3",
+          "currentStatus": "Non-Active",
+          "date": "13/2/2024"
+       },
+       {
+        "id": "#4567",
+        "segementName": "Top Banner",
+        "currentStatus": "Non-Active",
+        "date": "12/2/2024"
+      },
+      ],
+      "httpStatusCode": "201",
+      "errorCode": "201",
+      "errorMessage": ""
+  });
+  } catch (err) {
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
 
 module.exports = router;
