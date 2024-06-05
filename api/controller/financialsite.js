@@ -15,7 +15,28 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.post('/variable', async (req, res) => {
+router.post('/login', async (req, res) => {
+  try {
+    res.json({
+response:[{
+  email:"user@gmail.com",
+password:"123456"
+}],
+        errorCode
+        : 
+        "201",
+        errorMessage
+        :
+        "Login Sucessfully",
+        httpStatusCode
+        : 
+        "201"
+
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});router.post('/variable', async (req, res) => {
   try {
     res.json({
 
@@ -24,7 +45,7 @@ router.post('/variable', async (req, res) => {
         "201",
         errorMessage
         :
-        "Login Sucessfully",
+        "Created Sucessfully",
         httpStatusCode
         : 
         "201"
