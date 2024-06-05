@@ -18,16 +18,19 @@ router.post('/', async (req, res) => {
 router.post('/login', async (req, res) => {
   try {
     res.json({
-
+data:[{
+  email:"user@gmail.com",
+password:"123456"
+}],
         errorCode
         : 
-        "400",
+        "201",
         errorMessage
         :
-        "Something Went Wring",
+        "Login Sucessfully",
         httpStatusCode
         : 
-        "400"
+        "201"
 
     });
   } catch (err) {
