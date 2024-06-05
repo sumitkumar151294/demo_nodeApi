@@ -15,13 +15,10 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.post('/login', async (req, res) => {
+router.post('/variable', async (req, res) => {
   try {
     res.json({
-response:[{
-  email:"user@gmail.com",
-password:"123456"
-}],
+
         errorCode
         : 
         "201",
