@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.post('/login', async (req, res) => {
+router.post('/postlogin', async (req, res) => {
   try {
     res.json({
 response:[{
@@ -36,7 +36,7 @@ password:"123456"
   } catch (err) {
     res.status(500).json({ error: 'Internal Server Error' });
   }
-});router.post('/variable', async (req, res) => {
+});router.post('/postvariable', async (req, res) => {
   try {
     res.json({
 
