@@ -15,18 +15,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.post('/category', async (req, res) => {
-  try {
-    res.json({
-data:{
-  errorcoode: 201,
-  message:"created succesfully"
-}
-    });
-  } catch (err) {
-    res.status(500).json({ error: 'Internal Server Error' });
-  }
-});
 router.post('/login', async (req, res) => {
   try {
    
@@ -48,7 +36,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-router.post('/module', async (req, res) => {
+router.get('/module', async (req, res) => {
   try {
    
     res.json({
