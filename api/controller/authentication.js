@@ -180,7 +180,7 @@ router.get("/productContent", async (req, res) => {
       response: [
         {
           productName: "Amazon",
-          typeOfProduct: "Gift card",
+          typeOfProduct: "Gift Cards",
           category: "Amazon",
           id: "#5567",
           dealUnlock:"Yes",
@@ -232,7 +232,7 @@ router.get("/productContent", async (req, res) => {
         },
         {
           productName: "Amazon",
-          typeOfProduct: "Gift card",
+          typeOfProduct: "Gift Cards",
           category: "Amazon",
           id: "#5567",
           dealUnlock:"Yes",
