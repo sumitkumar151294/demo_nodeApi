@@ -42,54 +42,67 @@ router.get("/module", async (req, res) => {
         {
           name: "Dashboard",
           icon: "dashboard",
+          routePath:"/dashboard"
         },
         {
           name: "Customer Segment",
           icon: "segment",
+          routePath:"/customerSegment"
         },
         {
           name: "Product Content",
           icon: "content",
+          routePath:"/productContentList"
         },
         {
           name: "Product Section",
           icon: "section",
+          routePath:"/productSection"
         },
         {
           name: "Add Coupon",
           icon: "Add",
+          routePath:"/addCoupon"
         },
         {
           name: "Add bulk coupon",
           icon: "bulk",
+          routePath:"/addBulkCoupon"
         },
         {
           name: "Dynamic coupon",
           icon: "Dynamic",
+          routePath:"/dynamicCoupon"
         },
         {
           name: "Coupon List",
           icon: "list",
+          routePath:"/couponList"
         },
         {
           name: "Category Master",
           icon: "2Category",
+          routePath:"/categoryMaster"
         },
         {
           name: "Deal Management",
           icon: "Deal",
+          routePath:"/dealManagement"
         },
         {
           name: "Deal List",
           icon: "Deal",
+          routePath:"/dealList"
         },
         {
           name: "Deal To Segment",
           icon: "customer2",
+          routePath:"/dealToSegment"
         },
         {
           name: "Campaign Master",
           icon: "master",
+          routePath:"/compaignMaster"
         },
       ],
       httpStatusCode: "201",
