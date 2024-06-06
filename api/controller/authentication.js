@@ -42,54 +42,67 @@ router.get("/module", async (req, res) => {
         {
           name: "Dashboard",
           icon: "dashboard",
+          routePath:"/dashboard"
         },
         {
           name: "Customer Segment",
           icon: "segment",
+          routePath:"/customerSegment"
         },
         {
           name: "Product Content",
           icon: "content",
+          routePath:"/productContentList"
         },
         {
           name: "Product Section",
           icon: "section",
+          routePath:"/productSection"
         },
         {
           name: "Add Coupon",
           icon: "Add",
+          routePath:"/addCoupon"
         },
         {
           name: "Add bulk coupon",
           icon: "bulk",
+          routePath:"/addBulkCoupon"
         },
         {
           name: "Dynamic coupon",
           icon: "Dynamic",
+          routePath:"/dynamicCoupon"
         },
         {
           name: "Coupon List",
           icon: "list",
+          routePath:"/couponList"
         },
         {
           name: "Category Master",
           icon: "2Category",
+          routePath:"/categoryMaster"
         },
         {
           name: "Deal Management",
           icon: "Deal",
+          routePath:"/dealManagement"
         },
         {
           name: "Deal List",
           icon: "Deal",
+          routePath:"/dealList"
         },
         {
           name: "Deal To Segment",
           icon: "customer2",
+          routePath:"/dealToSegment"
         },
         {
           name: "Campaign Master",
           icon: "master",
+          routePath:"/compaignMaster"
         },
       ],
       httpStatusCode: "201",
@@ -150,6 +163,124 @@ router.get("/customerSegment", async (req, res) => {
           segmentName: "Top Banner",
           currentStatus: "Non-Active",
           date: "12/2/2024",
+        },
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+      errorMessage: "",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+router.get("/productContent", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          productName: "Amazon",
+          typeOfProduct: "Gift card",
+          category: "Amazon",
+          id: "#5567",
+          dealUnlock:"Yes",
+          Points:"098",
+          Price:"2300",
+          Link:"profile",
+          image:"image",
+          Status:"Non-Active",
+          date:"15/2/2024"
+        },
+        {
+          productName: "Filpkart",
+          typeOfProduct: "Ear buds",
+          category: "Flipcart",
+          id: "#45677",
+          dealUnlock:"No",
+          Points:"903",
+          Price:"2345",
+          Link:"profile",
+          image:"image",
+          Status:"Non-Active",
+          date:"14/2/2024"
+        },
+        {
+          productName: "Meesho",
+          typeOfProduct: "Mobile",
+          category: "Grocery",
+          id: "#4567",
+          dealUnlock:"Yes",
+          Points:"364",
+          Price:"3400",
+          Link:"profile",
+          image:"image",
+          Status:"Non-Active",
+          date:"13/2/2024"
+        },
+        {
+          productName: "Snapdeal",
+          typeOfProduct: "Smart watch",
+          category: "Electronic",
+          id: "#4576",
+          dealUnlock:"Yes",
+          Points:"845",
+          Price:"4589",
+          Link:"profile",
+          image:"image",
+          Status:"Non-Active",
+          date:"12/2/2024"
+        },
+        {
+          productName: "Amazon",
+          typeOfProduct: "Gift card",
+          category: "Amazon",
+          id: "#5567",
+          dealUnlock:"Yes",
+          Points:"098",
+          Price:"2300",
+          Link:"profile",
+          image:"image",
+          Status:"Non-Active",
+          date:"15/2/2024"
+        },
+        {
+          productName: "Filpkart",
+          typeOfProduct: "Ear buds",
+          category: "Flipcart",
+          id: "#45677",
+          dealUnlock:"No",
+          Points:"903",
+          Price:"2345",
+          Link:"profile",
+          image:"image",
+          Status:"Non-Active",
+          date:"14/2/2024"
+        },
+        {
+          productName: "Meesho",
+          typeOfProduct: "Mobile",
+          category: "Grocery",
+          id: "#4567",
+          dealUnlock:"Yes",
+          Points:"364",
+          Price:"3400",
+          Link:"profile",
+          image:"image",
+          Status:"Non-Active",
+          date:"13/2/2024"
+        },
+        {
+          productName: "Snapdeal",
+          typeOfProduct: "Smart watch",
+          category: "Electronic",
+          id: "#4576",
+          dealUnlock:"Yes",
+          Points:"845",
+          Price:"4589",
+          Link:"profile",
+          image:"image",
+          Status:"Non-Active",
+          date:"12/2/2024"
         },
       ],
       httpStatusCode: "201",
