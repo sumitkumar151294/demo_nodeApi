@@ -220,7 +220,7 @@ router.get("/productContent", async (req, res) => {
         {
           productName: "Snapdeal",
           typeOfProduct: "Smart watch",
-          category: "Electronic",
+          category: "Electronics",
           id: "#4576",
           dealUnlock:"Yes",
           Points:"845",
@@ -272,7 +272,7 @@ router.get("/productContent", async (req, res) => {
         {
           productName: "Snapdeal",
           typeOfProduct: "Smart watch",
-          category: "Electronic",
+          category: "Electronics",
           id: "#4576",
           dealUnlock:"Yes",
           Points:"845",
