@@ -230,10 +230,20 @@ router.post("/postclientmaster", async (req, res) => {
           type: "Virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "Noor",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
@@ -242,66 +252,92 @@ router.post("/postclientmaster", async (req, res) => {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "non-Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
+
         }, {
           type: "virat",
           description: "no",
           date: "23/3/2024",
-        }, {
-          type: "virat",
-          description: "no",
-          date: "23/3/2024",
+          status: "Active",
+
         },
 
       ],
