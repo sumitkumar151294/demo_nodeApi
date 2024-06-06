@@ -245,7 +245,7 @@ router.get("/productContent", async (req, res) => {
         },
         {
           productName: "Filpkart",
-          typeOfProduct: "Ear buds",
+          typeOfProduct: "Earbuds",
           category: "Flipcart",
           id: "#45677",
           dealUnlock:"No",
