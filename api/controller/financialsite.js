@@ -125,6 +125,7 @@ router.get("/getclientmaster", async (req, res) => {
           clientName: "name",
           description: "no",
           date: "23/3/2024",
+          status: "Active",
         },
         {
           clientName: "name",
@@ -207,6 +208,142 @@ router.post("/postclientmaster", async (req, res) => {
       errorCode: "201",
       errorMessage: "Created Sucessfully",
       httpStatusCode: "201",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+}); router.post("/posttemplatetypemaster", async (req, res) => {
+  try {
+    res.json({
+      errorCode: "201",
+      errorMessage: "Created Sucessfully",
+      httpStatusCode: "201",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});router.get("/gettemplatetypemaster", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          type: "Virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "Noor",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "non-Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        }, {
+          type: "virat",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+
+        },
+
+      ],
+      httpStatusCode: "200",
+      errorCode: "200",
+      errorMessage: "",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
