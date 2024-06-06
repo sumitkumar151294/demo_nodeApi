@@ -188,7 +188,7 @@ router.get("/productContent", async (req, res) => {
           Price:"2300",
           Link:"profile",
           image:"image",
-          Status:"Non-Active",
+          Status:true,
           date:"15/2/2024"
         },
         {
@@ -201,7 +201,7 @@ router.get("/productContent", async (req, res) => {
           Price:"2345",
           Link:"profile",
           image:"image",
-          Status:"Non-Active",
+          Status:false,
           date:"14/2/2024"
         },
         {
@@ -227,7 +227,7 @@ router.get("/productContent", async (req, res) => {
           Price:"4589",
           Link:"profile",
           image:"image",
-          Status:"Non-Active",
+          Status:true,
           date:"12/2/2024"
         },
         {
@@ -240,7 +240,7 @@ router.get("/productContent", async (req, res) => {
           Price:"2300",
           Link:"profile",
           image:"image",
-          Status:"Non-Active",
+          Status:false,
           date:"15/2/2024"
         },
         {
