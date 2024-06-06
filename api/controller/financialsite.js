@@ -116,7 +116,92 @@ router.get("/getvariable", async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
   }
-});router.post("/postclientmaster", async (req, res) => {
+});
+router.get("/getclientmaster", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Non-Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Non-Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+        },
+        {
+          clientName: "name",
+          description: "no",
+          date: "23/3/2024",
+          status: "Active",
+        },
+      ],
+      httpStatusCode: "200",
+      errorCode: "200",
+      errorMessage: "",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+router.post("/postclientmaster", async (req, res) => {
   try {
     res.json({
       errorCode: "201",
