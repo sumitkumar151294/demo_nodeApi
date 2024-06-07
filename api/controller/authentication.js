@@ -189,7 +189,7 @@ router.get("/productContent", async (req, res) => {
           Link:"profile",
           image:"image",
           Status:true,
-          date:"15/2/2024"
+          date:"15/02/2024"
         },
         {
           productName: "Filpkart",
@@ -202,7 +202,7 @@ router.get("/productContent", async (req, res) => {
           Link:"profile",
           image:"image",
           Status:false,
-          date:"14/2/2024"
+          date:"14/02/2024"
         },
         {
           productName: "Meesho",
@@ -215,7 +215,7 @@ router.get("/productContent", async (req, res) => {
           Link:"profile",
           image:"image",
           Status:false,
-          date:"13/2/2024"
+          date:"13/6/2024"
         },
         {
           productName: "Snapdeal",
@@ -228,7 +228,7 @@ router.get("/productContent", async (req, res) => {
           Link:"profile",
           image:"image",
           Status:true,
-          date:"12/2/2024"
+          date:"12/03/2024"
         },
         {
           productName: "Amazon",
@@ -241,7 +241,7 @@ router.get("/productContent", async (req, res) => {
           Link:"profile",
           image:"image",
           Status:false,
-          date:"15/2/2024"
+          date:"15/04/2024"
         },
         {
           productName: "Filpkart",
@@ -254,7 +254,7 @@ router.get("/productContent", async (req, res) => {
           Link:"profile",
           image:"image",
           Status:true,
-          date:"14/2/2024"
+          date:"14/05/2024"
         },
         {
           productName: "Meesho",
@@ -267,7 +267,7 @@ router.get("/productContent", async (req, res) => {
           Link:"profile",
           image:"image",
           Status:true,
-          date:"13/2/2024"
+          date:"13/02/2024"
         },
         {
           productName: "Snapdeal",
@@ -280,7 +280,7 @@ router.get("/productContent", async (req, res) => {
           Link:"profile",
           image:"image",
           Status:false,
-          date:"12/2/2024"
+          date:"12/03/2024"
         },
       ],
       httpStatusCode: "201",
