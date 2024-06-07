@@ -291,5 +291,79 @@ router.get("/productContent", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+router.post("/postProductSection", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          adminRoleId: 1,
+          userId: 2,
+          accessClientIds: "1",
+          clientRoleId: 2,
+        },
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+      errorMessage: "Submitted Successfully",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+router.get("/getProductSection", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          name: "Bags, Wallets and Luggage",
+          date: "23/3/2024",
+          currentStatus: true,
+          image:"image"
+        },
+        {
+          name: "Clothing & Accessories",
+          date: "23/3/2024",
+          currentStatus: false,
+          image:"image"
+        },
+        {
+          name: "Beauty",
+          date: "23/3/2024",
+          currentStatus: true,
+          image:"image"
+        },
+        {
+          name: "Bags, Wallets and Luggage",
+          date: "23/3/2024",
+          currentStatus: true,
+          image:"image"
+        },
+        {
+          name: "Clothing & Accessories",
+          date: "23/3/2024",
+          currentStatus: false,
+          image:"image"
+        },
+        {
+          name: "Beauty",
+          date: "23/3/2024",
+          currentStatus: true,
+          image:"image"
+        },  {
+          name: "Bags, Wallets and Luggage",
+          date: "23/3/2024",
+          currentStatus: true,
+          image:"image"
+        }
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+      errorMessage: "",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 
 module.exports = router;
