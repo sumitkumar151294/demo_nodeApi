@@ -355,7 +355,7 @@ router.get("/getProductSection", async (req, res) => {
       ],
       httpStatusCode: "201",
       errorCode: "201",
-      errorMessage: "",
+      errorMessage: "gfdh",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
