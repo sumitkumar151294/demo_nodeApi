@@ -319,19 +319,16 @@ router.get("/getProductSection", async (req, res) => {
           name: "Bags, Wallets and Luggage",
           date: "23/3/2024",
           currentStatus: true,
-          image:"image"
         },
         {
           name: "Clothing & Accessories",
           date: "23/3/2024",
           currentStatus: false,
-          image:"image"
         },
         {
           name: "Beauty",
           date: "23/3/2024",
           currentStatus: true,
-          image:"image"
         },
         {
           name: "Bags, Wallets and Luggage",
