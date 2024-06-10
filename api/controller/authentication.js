@@ -359,4 +359,24 @@ router.get("/getProductSection", async (req, res) => {
   }
 });
 
+router.post("/roleMaster", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          adminRoleId: 1,
+          userId: 2,
+          accessClientIds: "1",
+          clientRoleId: 2,
+        },
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+      errorMessage: "Submitted Successfully",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
 module.exports = router;
