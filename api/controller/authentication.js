@@ -379,4 +379,25 @@ router.post("/roleMaster", async (req, res) => {
   }
 });
 
+router.get("/getRoleMaster", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          name: "Client Role",
+          module:"Dashboard"
+        },
+        {
+          name: "Admin Role",
+          module:"Product Section"
+        }
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
 module.exports = router;
