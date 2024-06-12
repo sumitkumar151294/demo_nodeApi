@@ -420,5 +420,33 @@ router.post("/clientMaster", async (req, res) => {
   }
 });
 
+router.get("/getClientMaster", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          name: "Sumit kumar",
+          number:"8791711111",
+          email:"sumitji@gmail.com",
+          id:"1",
+          status:true,
+
+        },
+         {
+          name: "Ankita",
+          number:"8791456723",
+          email:"ankita@gmail.com",
+          id:"4",
+          status:false,
+          
+        },
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 
 module.exports = router;
