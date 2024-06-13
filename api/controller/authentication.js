@@ -448,5 +448,56 @@ router.get("/getClientMaster", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
-
+router.post("/userMaster", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          adminRoleId: 1,
+          userId: 2,
+          accessClientIds: "1",
+          clientRoleId: 2,
+        },
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+      errorMessage: "Submitted Successfully",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+router.get("/getUserMaster", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          roleName: "Client Role",
+          email:"sumitji@gmail.com",
+          number:"8791711111",
+          name: "username",
+          client:"Sumit kumar"
+        },
+        {
+          roleName: "Wert Role",
+          email:"abc@gmail.com",
+          number:"9879175671",
+          name: "dfghj",
+          client:"clientname"
+        },
+        {
+          roleName: "Client Role",
+          email:"sumitkumar@gmail.com",
+          number:"3214567890",
+          name: "abc02",
+          client:"Sumit kumar"
+        }
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 module.exports = router;
