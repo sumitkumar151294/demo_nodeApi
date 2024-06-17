@@ -20,15 +20,13 @@ router.post("/login", async (req, res) => {
     res.json({
       response: [
         {
-          adminRoleId: 1,
-          userId: 2,
-          accessClientIds: "1",
-          clientRoleId: 2,
+          email: "demo@gmail.com",
+          password: "123456",
         },
       ],
-      httpStatusCode: "201",
       errorCode: "201",
-      errorMessage: "Login Successfully",
+      errorMessage: "Login Sucessfully",
+      httpStatusCode: "201",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -104,6 +102,20 @@ router.get("/module", async (req, res) => {
           icon: "master",
           routePath:"/compaignMaster"
         },
+        {
+          name: "Role Master",
+          icon: "master",
+          routePath:"/roleMaster"
+        },
+        {
+          name: "Client Master",
+          icon: "master",
+          routePath:"/clientMaster"
+        },{
+          name: "User Master",
+          icon: "master",
+          routePath:"/UserMaster"
+        }
       ],
       httpStatusCode: "201",
       errorCode: "201",
@@ -167,7 +179,6 @@ router.get("/customerSegment", async (req, res) => {
       ],
       httpStatusCode: "201",
       errorCode: "201",
-      errorMessage: "",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -284,8 +295,7 @@ router.get("/productContent", async (req, res) => {
         },
       ],
       httpStatusCode: "201",
-      errorCode: "201",
-      errorMessage: "",
+      errorCode: "201"
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -296,10 +306,9 @@ router.post("/postProductSection", async (req, res) => {
     res.json({
       response: [
         {
-          adminRoleId: 1,
-          userId: 2,
-          accessClientIds: "1",
-          clientRoleId: 2,
+          sectionName: "Bags, Wallets and Luggage",
+          status: true,
+          date: "15/06,2024"
         },
       ],
       httpStatusCode: "201",
@@ -352,7 +361,6 @@ router.get("/getProductSection", async (req, res) => {
       ],
       httpStatusCode: "201",
       errorCode: "201",
-      errorMessage: "gfdh",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -364,10 +372,9 @@ router.post("/roleMaster", async (req, res) => {
     res.json({
       response: [
         {
-          adminRoleId: 1,
-          userId: 2,
-          accessClientIds: "1",
-          clientRoleId: 2,
+          roleName: "Admin Role",
+          Description: "",
+          accessModules: ["Dashboard","Product Content","Product Section"]
         },
       ],
       httpStatusCode: "201",
@@ -405,11 +412,15 @@ router.post("/clientMaster", async (req, res) => {
     res.json({
       response: [
         {
-          adminRoleId: 1,
-          userId: 2,
-          accessClientIds: "1",
-          clientRoleId: 2,
-        },
+          name: "Sumit kumar",
+          number:"8791711111",
+          email:"sumitji@gmail.com",
+          domainUrl:"https://qa-cc-admin.giftstacc.com/lc-admin/client-master",
+          status:true,
+          color:"black",
+          logoLink:"favicon.png",
+          theme:"Theme 1"
+        }
       ],
       httpStatusCode: "201",
       errorCode: "201",
@@ -453,11 +464,12 @@ router.post("/userMaster", async (req, res) => {
     res.json({
       response: [
         {
-          adminRoleId: 1,
-          userId: 2,
-          accessClientIds: "1",
-          clientRoleId: 2,
-        },
+          roleName: "Client Role",
+          email:"sumitji@gmail.com",
+          number:"8791711111",
+          name: "Ankita Singh",
+          client:"Sumit kumar"
+        }
       ],
       httpStatusCode: "201",
       errorCode: "201",
@@ -505,10 +517,11 @@ router.post("/addCoupon", async (req, res) => {
     res.json({
       response: [
         {
-          adminRoleId: 1,
-          userId: 2,
-          accessClientIds: "1",
-          clientRoleId: 2,
+          offer: "offers",
+          couponcode: "ADFH234",
+          typeOfCoupon: "Static Coupon",
+          image: "favicon.png",
+          date:"30/07/2024"
         },
       ],
       httpStatusCode: "201",
