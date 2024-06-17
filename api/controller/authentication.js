@@ -104,17 +104,17 @@ router.get("/module", async (req, res) => {
         },
         {
           name: "Role Master",
-          icon: "master",
+          icon: "roleMaster",
           routePath:"/roleMaster"
         },
         {
           name: "Client Master",
-          icon: "master",
+          icon: "clientMaster",
           routePath:"/clientMaster"
         },{
           name: "User Master",
-          icon: "master",
-          routePath:"/UserMaster"
+          icon: "userMaster",
+          routePath:"/userMaster"
         }
       ],
       httpStatusCode: "201",
