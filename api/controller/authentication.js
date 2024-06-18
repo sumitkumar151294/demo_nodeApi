@@ -21,7 +21,8 @@ router.post("/login", async (req, res) => {
       response: [
         {
           email: "demo@gmail.com",
-          password: "123456",
+          password: "123456", 
+          partner_Code:"UIAdmin"
         },
       ],
       errorCode: "201",
