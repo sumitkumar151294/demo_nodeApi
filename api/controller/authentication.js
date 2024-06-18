@@ -532,4 +532,23 @@ router.post("/addCoupon", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+
+router.post("/generate-auth-token", async (req, res) => {
+  try {
+    res.json({
+       response: [
+        {
+            clientId: "0",
+            token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAiLCJwYXJ0bmVyLWNvZGUiOiJVSUFkbWluIiwianRpIjoiN2FmNjYyNmYtYjAxOS00NDZiLWIzZWEtMzEzNTY4ODliNTJkIiwiZXhwIjoxNzE4NzAwNDE2LCJpc3MiOiJhYmMiLCJhdWQiOiJ2ZGZzZ2Rmc2dfR0ZzZGZnX0dGRFNnX0dGZHNmR19ERlNHR1NERlNERkdfZ19Hc2RmR19TZGZHX0RoR0ZIX2dmIn0.nkRKUpcEJUHxfKAYwinqmf3ltjVtGwhZ8jK-Z90qN2U",
+            expiryTime: "2024-06-18T08:46:56.12469Z"
+        }
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+      errorMessage: "",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 module.exports = router;
