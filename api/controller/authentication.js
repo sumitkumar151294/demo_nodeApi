@@ -374,7 +374,7 @@ router.post("/roleMaster", async (req, res) => {
       response: [
         {
           roleName: "Admin Role",
-          Description: "",
+          Description: "Test Description",
           accessModules: ["Dashboard","Product Content","Product Section"]
         },
       ],
@@ -522,7 +522,7 @@ router.post("/addCoupon", async (req, res) => {
           couponcode: "ADFH234",
           typeOfCoupon: "Static Coupon",
           image: "favicon.png",
-          date:"30/07/2024"
+          date:"30/07/2024",
         },
       ],
       httpStatusCode: "201",
