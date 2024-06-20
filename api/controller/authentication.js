@@ -439,14 +439,7 @@ router.post("/clientMaster", async (req, res) => {
     res.json({
       response: [
         {
-          name: "Sumit kumar",
-          number:"8791711111",
-          email:"sumitji@gmail.com",
-          domainUrl:"https://qa-cc-admin.giftstacc.com/lc-admin/client-master",
-          status:true,
-          color:"black",
-          logoLink:"favicon.png",
-          theme:"Theme 1"
+          id:"86"
         }
       ],
       httpStatusCode: "201",
