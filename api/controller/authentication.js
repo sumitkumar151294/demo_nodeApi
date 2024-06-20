@@ -1641,16 +1641,16 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "orderbrand",
-                  "resourceValue": "Brand",
+                  "resourceKey": "db_name",
+                  "resourceValue": "Database Name",
                   "lang": "En",
                   "id": 145
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "ordervouchers",
-                  "resourceValue": "Total No. Vouchers",
+                  "resourceKey": "platform_Domain_Url",
+                  "resourceValue": "Platform Domain Url",
                   "lang": "En",
                   "id": 146
               },
