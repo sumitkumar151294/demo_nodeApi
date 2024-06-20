@@ -373,14 +373,24 @@ router.post("/roleMaster", async (req, res) => {
     res.json({
       response: [
         {
-          roleName: "Admin Role",
-          Description: "Test Description",
-          accessModules: ["Dashboard","Product Content","Product Section"]
+          roleId: "43",
         },
       ],
       httpStatusCode: "201",
       errorCode: "201",
-      errorMessage: "Submitted Successfully",
+      errorMessage: "Created Successfully",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+router.post("/user-role-module-access", async (req, res) => {
+  try {
+    res.json({
+      httpStatusCode: "201",
+      errorCode: "201",
+      errorMessage: "Created Successfully",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
