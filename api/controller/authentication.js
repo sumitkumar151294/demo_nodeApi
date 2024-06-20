@@ -556,8 +556,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
   try {
     res.json({
       response: [
-        {
-                  "clientId": "0",
+               {
+                   "clientId": "0",
                   "resourceType": "UIAdmin",
                   "resourceKey": "edit",
                   "resourceValue": "Edit",
