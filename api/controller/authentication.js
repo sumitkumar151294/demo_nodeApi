@@ -557,8 +557,6 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
     res.json({
       response: [
         {
-          "response": [
-              {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
                   "resourceKey": "edit",
@@ -2262,11 +2260,6 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
                   "lang": "En",
                   "id": 227
               },
-          ],
-          "httpStatusCode": "200",
-          "errorCode": "200",
-          "errorMessage": ""
-      }
       ],
       httpStatusCode: "201",
       errorCode: "201",
