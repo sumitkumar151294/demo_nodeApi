@@ -1842,8 +1842,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "failedorderspaidamount",
-                  "resourceValue": "Paid Amount",
+                  "resourceKey": "sign_me_label",
+                  "resourceValue": "Sign Me In",
                   "lang": "En",
                   "id": 171
               },
