@@ -557,7 +557,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
     res.json({
       response: [
                {
-                   "clientId": "0",
+                  "clientId": "0",
                   "resourceType": "UIAdmin",
                   "resourceKey": "edit",
                   "resourceValue": "Edit",
@@ -1047,8 +1047,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "supplierName",
-                  "resourceValue": "Supplier Name",
+                  "resourceKey": "description_Label",
+                  "resourceValue": "Description",
                   "lang": "En",
                   "id": 71
               },
