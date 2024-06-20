@@ -39,80 +39,96 @@ router.get("/module", async (req, res) => {
     res.json({
       response: [
         {
+          id:"1",
           name: "Dashboard",
           icon: "dashboard",
           routePath:"/dashboard"
         },
         {
+          id:"2",
           name: "Customer Segment",
           icon: "segment",
           routePath:"/customerSegment"
         },
         {
+          id:"3",
           name: "Product Content",
           icon: "content",
           routePath:"/productContentList"
         },
         {
+          id:"4",
           name: "Product Section",
           icon: "section",
           routePath:"/productSection"
         },
         {
+          id:"5",
           name: "Add Coupon",
           icon: "Add",
           routePath:"/addCoupon"
         },
         {
+          id:"6",
           name: "Add bulk coupon",
           icon: "bulk",
           routePath:"/addBulkCoupon"
         },
         {
+          id:"7",
           name: "Dynamic coupon",
           icon: "Dynamic",
           routePath:"/dynamicCoupon"
         },
         {
+          id:"8",
           name: "Coupon List",
           icon: "list",
           routePath:"/couponList"
         },
         {
+          id:"9",
           name: "Category Master",
           icon: "2Category",
           routePath:"/categoryMaster"
         },
         {
+          id:"10",
           name: "Deal Management",
           icon: "Deal",
           routePath:"/dealManagement"
         },
         {
+          id:"11",
           name: "Deal List",
           icon: "Deal",
           routePath:"/dealList"
         },
         {
+          id:"12",
           name: "Deal To Segment",
           icon: "customer2",
           routePath:"/dealToSegment"
         },
         {
+          id:"13",
           name: "Campaign Master",
           icon: "master",
           routePath:"/compaignMaster"
         },
         {
+          id:"14",
           name: "Role Master",
           icon: "roleMaster",
           routePath:"/roleMaster"
         },
         {
+          id:"15",
           name: "Client Master",
           icon: "clientMaster",
           routePath:"/clientMaster"
         },{
+          id:"16",
           name: "User Master",
           icon: "userMaster",
           routePath:"/userMaster"
