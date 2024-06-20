@@ -1045,13 +1045,29 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
                   "id": 70
               },
               {
-                  "clientId": "0",
-                  "resourceType": "UIAdmin",
-                  "resourceKey": "description_Label",
-                  "resourceValue": "Description",
-                  "lang": "En",
-                  "id": 71
-              },
+                "clientId": "0",
+                "resourceType": "UIAdmin",
+                "resourceKey": "view",
+                "resourceValue": "View",
+                "lang": "En",
+                "id": 235
+            },
+            {
+                "clientId": "0",
+                "resourceType": "UIAdmin",
+                "resourceKey": "add",
+                "resourceValue": "Add",
+                "lang": "En",
+                "id": 236
+            },
+            {
+                "clientId": "0",
+                "resourceType": "UIAdmin",
+                "resourceKey": "description",
+                "resourceValue": "Description",
+                "lang": "EN",
+                "id": 238
+            },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
