@@ -418,12 +418,12 @@ router.get("/getRoleMaster", async (req, res) => {
     res.json({
       response: [
         {
+          id:"1",
           name: "Client Role",
-          module:"Dashboard"
         },
         {
+          id:"2",
           name: "Admin Role",
-          module:"Product Section"
         }
       ],
       httpStatusCode: "201",
