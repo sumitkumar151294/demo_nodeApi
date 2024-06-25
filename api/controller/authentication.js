@@ -1682,8 +1682,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "no_record",
-                  "resourceValue": "No Record Found",
+                  "resourceKey": "productSectionList",
+                  "resourceValue": "Product Section List",
                   "lang": "En",
                   "id": 151
               },
@@ -1698,8 +1698,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "failedorders",
-                  "resourceValue": "Failed Orders",
+                  "resourceKey": "productSection",
+                  "resourceValue": "Product Section",
                   "lang": "En",
                   "id": 153
               },
@@ -1722,8 +1722,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "brand_Detail_Label",
-                  "resourceValue": "Detail",
+                  "resourceKey": "sectionName",
+                  "resourceValue": "Section Name",
                   "lang": "En",
                   "id": 156
               },
@@ -1738,8 +1738,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "UIAdmin",
-                  "resourceValue": "(Admin);",
+                  "resourceKey": "action",
+                  "resourceValue": "Action",
                   "lang": "En",
                   "id": 158
               },
