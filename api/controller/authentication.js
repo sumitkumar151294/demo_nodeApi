@@ -1619,7 +1619,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
                   "resourceKey": "date",
-                  "resourceValue": "Date Range With Time",
+                  "resourceValue": "Date",
                   "lang": "En",
                   "id": 143
               },
