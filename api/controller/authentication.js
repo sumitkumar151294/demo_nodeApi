@@ -1194,24 +1194,24 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "End_Point_Label",
-                  "resourceValue": "End Point",
+                  "resourceKey": "productContentList",
+                  "resourceValue": "Product Content List",
                   "lang": "En",
                   "id": 85
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "Authorization_Code_Label",
-                  "resourceValue": "Authorization Code",
+                  "resourceKey": "productName",
+                  "resourceValue": "Product Name",
                   "lang": "En",
                   "id": 86
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "Min._Threshold_Amount_Label",
-                  "resourceValue": "Min. Threshold Amount",
+                  "resourceKey": "typeOfProduct",
+                  "resourceValue": "Type Of Product",
                   "lang": "En",
                   "id": 87
               },
@@ -1290,16 +1290,16 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "categoryName",
-                  "resourceValue": "Category Name",
+                  "resourceKey": "category",
+                  "resourceValue": "Category",
                   "lang": "En",
                   "id": 97
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "supplierBrand",
-                  "resourceValue": "Supplier Brand",
+                  "resourceKey": "dealUnlock",
+                  "resourceValue": "Deal Unlock",
                   "lang": "En",
                   "id": 98
               },
@@ -1330,8 +1330,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "categories",
-                  "resourceValue": "Categories",
+                  "resourceKey": "points",
+                  "resourceValue": "Points",
                   "lang": "En",
                   "id": 102
               },
@@ -1354,24 +1354,24 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "orders",
-                  "resourceValue": "Orders",
+                  "resourceKey": "price",
+                  "resourceValue": "Price",
                   "lang": "En",
                   "id": 106
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "todayrevenue",
-                  "resourceValue": "Today’s Revenue",
+                  "resourceKey": "link_label",
+                  "resourceValue": "Link",
                   "lang": "En",
                   "id": 107
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "activeuser",
-                  "resourceValue": "Active User's",
+                  "resourceKey": "image",
+                  "resourceValue": "Image",
                   "lang": "En",
                   "id": 108
               },
