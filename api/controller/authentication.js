@@ -1154,40 +1154,40 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "supplierList",
-                  "resourceValue": "Supplier List",
+                  "resourceKey": "customerSegment",
+                  "resourceValue": "Customer Segment",
                   "lang": "En",
                   "id": 80
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "supplier_Master_Label",
-                  "resourceValue": "Supplier Master",
+                  "resourceKey": "id",
+                  "resourceValue": "ID",
                   "lang": "En",
                   "id": 81
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "Supplier_name_Label",
-                  "resourceValue": "Supplier Name",
+                  "resourceKey": "segmentName",
+                  "resourceValue": "Segment Name",
                   "lang": "En",
                   "id": 82
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "supplier_Client_Label",
-                  "resourceValue": "Supplier Client ID",
+                  "resourceKey": "currentStatus",
+                  "resourceValue": "Current Status",
                   "lang": "En",
                   "id": 83
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "Supplier_Client_Secret_Label",
-                  "resourceValue": "Supplier Client Secret",
+                  "resourceKey": "date",
+                  "resourceValue": "Date",
                   "lang": "En",
                   "id": 84
               },
