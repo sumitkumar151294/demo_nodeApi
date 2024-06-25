@@ -2178,8 +2178,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "clientbrandlist",
-                  "resourceValue": "Client Brand List",
+                  "resourceKey": "status",
+                  "resourceValue": "Status",
                   "lang": "En",
                   "id": 213
               },
