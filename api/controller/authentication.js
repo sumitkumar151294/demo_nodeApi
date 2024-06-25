@@ -1650,16 +1650,16 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "orderamount",
-                  "resourceValue": "Total Order Amount",
+                  "resourceKey": "statusWise",
+                  "resourceValue": "Status Wise",
                   "lang": "En",
                   "id": 147
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "ordermargin",
-                  "resourceValue": "Margin",
+                  "resourceKey": "sortedBy",
+                  "resourceValue": "Sorted by",
                   "lang": "En",
                   "id": 148
               },
