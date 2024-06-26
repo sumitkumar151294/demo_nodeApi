@@ -70,13 +70,13 @@ router.get("/module", async (req, res) => {
         },
         {
           id:"6",
-          name: "Add bulk coupon",
+          name: "Add Bulk Coupon",
           icon: "bulk",
           routePath:"/addBulkCoupon"
         },
         {
           id:"7",
-          name: "Dynamic coupon",
+          name: "Dynamic Coupon",
           icon: "Dynamic",
           routePath:"/dynamicCoupon"
         },
@@ -564,7 +564,7 @@ router.get("/getRoleMaster", async (req, res) => {
         {
           id:"2",
           name: "Admin Role",
-          modules:["Dashboard","Customer Segment","Add Coupon"]
+          modules:["Dashboard","Customer Segment","Product Content List","Product Section","Add Coupon","Add Bulk Coupon", "Dynamic Coupon","Coupon List","Category List","Category Master","Deal Management","Deal List","Deal To Segment","Compaign Master","Role Master","Client Master","User Master"]
         }
       ],
       httpStatusCode: "201",
