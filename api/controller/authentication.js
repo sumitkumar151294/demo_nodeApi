@@ -132,12 +132,6 @@ router.get("/module", async (req, res) => {
           name: "User Master",
           icon: "userMaster",
           routePath:"/userMaster"
-        },
-        {
-          id:"17",
-          name: "Logout",
-          icon: "logout",
-          routePath:"/logout"
         }
       ],
       httpStatusCode: "201",
@@ -274,14 +268,6 @@ router.get("/user-role-module-access", async (req, res) => {
           id:15,
           roleId: 14,
           moduleId: 15,
-          viewAccess: true,
-          addAccess: false,
-          editAccess: false,
-        },
-        {
-          id:16,
-          roleId: 14,
-          moduleId: 16,
           viewAccess: true,
           addAccess: false,
           editAccess: false,
