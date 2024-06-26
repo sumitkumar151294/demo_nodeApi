@@ -559,12 +559,12 @@ router.get("/getRoleMaster", async (req, res) => {
         {
           id:"1",
           name: "Client Role",
-          module:["Dashboard","Customer Segment"]
+          modules:["Dashboard","Customer Segment"]
         },
         {
           id:"2",
           name: "Admin Role",
-          module:["Dashboard","Customer Segment","Add Coupon"]
+          modules:["Dashboard","Customer Segment","Add Coupon"]
         }
       ],
       httpStatusCode: "201",
