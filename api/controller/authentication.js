@@ -132,6 +132,12 @@ router.get("/module", async (req, res) => {
           name: "User Master",
           icon: "userMaster",
           routePath:"/userMaster"
+        },
+        {
+          id:"17",
+          name: "Logout",
+          icon: "logout",
+          routePath:"/logout"
         }
       ],
       httpStatusCode: "201",
