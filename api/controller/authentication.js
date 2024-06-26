@@ -147,6 +147,153 @@ router.get("/module", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+router.get("/user-role-module-access", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          id:1,
+          roleId: 14,
+          moduleId: 1,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:2,
+          roleId: 14,
+          moduleId: 2,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:3,
+          roleId: 14,
+          moduleId: 3,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:4,
+          roleId: 14,
+          moduleId: 4,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:5,
+          roleId: 14,
+          moduleId: 5,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:6,
+          roleId: 14,
+          moduleId: 6,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:7,
+          roleId: 14,
+          moduleId: 7,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:8,
+          roleId: 14,
+          moduleId: 8,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:9,
+          roleId: 14,
+          moduleId: 9,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:10,
+          roleId: 14,
+          moduleId: 10,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:11,
+          roleId: 14,
+          moduleId: 11,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:12,
+          roleId: 14,
+          moduleId: 12,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:13,
+          roleId: 14,
+          moduleId: 13,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:14,
+          roleId: 14,
+          moduleId: 14,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:1,
+          roleId: 14,
+          moduleId: 13,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },{
+          id:15,
+          roleId: 14,
+          moduleId: 15,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        },
+        {
+          id:16,
+          roleId: 14,
+          moduleId: 16,
+          viewAccess: true,
+          addAccess: false,
+          editAccess: false,
+        }
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 router.get("/customerSegment", async (req, res) => {
   try {
     res.json({
