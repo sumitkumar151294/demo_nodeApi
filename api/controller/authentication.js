@@ -2415,8 +2415,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "addedSuccessfully.",
-                  "resourceValue": "Added Successfully.",
+                  "resourceKey": "allocate.",
+                  "resourceValue": "Allocate",
                   "lang": "En",
                   "id": 225
               },
