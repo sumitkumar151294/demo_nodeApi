@@ -2343,32 +2343,32 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "clientbrandlistbrandname",
-                  "resourceValue": "Supplier Brand Name",
+                  "resourceKey": "dealOffer",
+                  "resourceValue": "Deal & Offer",
                   "lang": "En",
                   "id": 216
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "clientbrandlistdiscount",
-                  "resourceValue": "Customer Discount%",
+                  "resourceKey": " couponcode",
+                  "resourceValue": "Coupon code",
                   "lang": "En",
                   "id": 217
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "clientbrandlistcommission",
-                  "resourceValue": "Client Commission%",
+                  "resourceKey": "typeOfCoupon",
+                  "resourceValue": "Type of coupon",
                   "lang": "En",
                   "id": 218
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "clientbrandlistmargin",
-                  "resourceValue": "Supplier Margin%",
+                  "resourceKey": "redemationlink",
+                  "resourceValue": "Redemation link",
                   "lang": "En",
                   "id": 219
               },
@@ -2383,16 +2383,16 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "meaning",
-                  "resourceValue": "Meaning",
+                  "resourceKey": "validityDate",
+                  "resourceValue": "Validity Date",
                   "lang": "En",
                   "id": 221
               },
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "variable",
-                  "resourceValue": "Variable",
+                  "resourceKey": "termsAndCondition",
+                  "resourceValue": "Terms and condition",
                   "lang": "En",
                   "id": 222
               },
