@@ -20,9 +20,10 @@ router.post("/login", async (req, res) => {
     res.json({
       response: [
         {
-          email: "demo@gmail.com",
-          password: "123456", 
-          partner_Code:"UIAdmin"
+          accessClientIds: "1",
+          adminRoleId : 14,
+          clientRoleId: 2,
+          userId: 2
         },
       ],
       errorCode: "201",
