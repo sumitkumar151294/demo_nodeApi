@@ -968,8 +968,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "brands_label",
-                  "resourceValue": "Brands",
+                  "resourceKey": "ipAddress",
+                  "resourceValue": "IP Address",
                   "lang": "En",
                   "id": 39
               },
