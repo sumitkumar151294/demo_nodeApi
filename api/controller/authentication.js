@@ -2408,8 +2408,8 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIAdmin",
-                  "resourceKey": "fieldValueNotEmpty",
-                  "resourceValue": "Field value cannot be empty",
+                  "resourceKey": "description_place",
+                  "resourceValue": "description",
                   "lang": "En",
                   "id": 224
               },
