@@ -26,9 +26,9 @@ router.post("/login", async (req, res) => {
           userId: 2
         },
       ],
-      errorCode: "201",
+      errorCode: "200",
       errorMessage: "Login Sucessfully",
-      httpStatusCode: "201",
+      httpStatusCode: "200",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -135,8 +135,8 @@ router.get("/module", async (req, res) => {
           routePath:"/userMaster"
         }
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -274,8 +274,8 @@ router.get("/user-role-module-access", async (req, res) => {
           editAccess: true,
         }
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -334,8 +334,8 @@ router.get("/customerSegment", async (req, res) => {
           date: "12/2/2024",
         },
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -451,8 +451,8 @@ router.get("/productContent", async (req, res) => {
           date:"12/03/2024"
         },
       ],
-      httpStatusCode: "201",
-      errorCode: "201"
+      httpStatusCode: "200",
+      errorCode: "200"
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -468,8 +468,8 @@ router.post("/postProductSection", async (req, res) => {
           date: "15/06,2024"
         },
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
       errorMessage: "Submitted Successfully",
     });
   } catch (err) {
@@ -516,8 +516,8 @@ router.get("/getProductSection", async (req, res) => {
           currentStatus: true,
         }
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -532,8 +532,8 @@ router.post("/roleMaster", async (req, res) => {
           roleId: "43",
         },
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
       errorMessage: "Created Successfully",
     });
   } catch (err) {
@@ -544,8 +544,8 @@ router.post("/roleMaster", async (req, res) => {
 router.post("/user-role-module-access", async (req, res) => {
   try {
     res.json({
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
       errorMessage: "Created Successfully",
     });
   } catch (err) {
@@ -568,8 +568,31 @@ router.get("/getRoleMaster", async (req, res) => {
           modules:["Dashboard","Customer Segment","Product Content List","Product Section","Add Coupon","Add Bulk Coupon", "Dynamic Coupon","Coupon List","Category List","Category Master","Deal Management","Deal List","Deal To Segment","Compaign Master","Role Master","Client Master","User Master"]
         }
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+router.put("/roleMaster", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          id:"1",
+          name: "Client Role",
+          modules:["Dashboard","Customer Segment"]
+        },
+        {
+          id:"2",
+          name: "Admin Role",
+          modules:["Dashboard","Customer Segment","Product Content List","Product Section","Add Coupon","Add Bulk Coupon", "Dynamic Coupon","Coupon List","Category List","Category Master","Deal Management","Deal List","Deal To Segment","Compaign Master","Role Master","Client Master","User Master"]
+        }
+      ],
+      httpStatusCode: "200",
+      errorCode: "200",
+      errorMessage: "Updated Successfully",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -584,9 +607,9 @@ router.post("/clientMaster", async (req, res) => {
           id:"86"
         }
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
-      errorMessage: "Added Successfully",
+      httpStatusCode: "200",
+      errorCode: "200",
+      errorMessage: "Submitted Successfully",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -614,8 +637,8 @@ router.get("/getClientMaster", async (req, res) => {
           
         },
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -633,8 +656,8 @@ router.post("/userMaster", async (req, res) => {
           client:"Sumit kumar"
         }
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
       errorMessage: "Submitted Successfully",
     });
   } catch (err) {
@@ -667,8 +690,8 @@ router.get("/getUserMaster", async (req, res) => {
           client:"Sumit kumar"
         }
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -686,8 +709,8 @@ router.post("/addCoupon", async (req, res) => {
           date:"30/07/2024",
         },
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
       errorMessage: "Submitted Successfully",
     });
   } catch (err) {
@@ -705,8 +728,8 @@ router.post("/generate-auth-token", async (req, res) => {
             expiryTime: "2024-06-18T08:46:56.12469Z"
         }
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
       errorMessage: "",
     });
   } catch (err) {
@@ -719,7 +742,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
       response: [
                {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "edit",
                   "resourceValue": "Edit",
                   "lang": "En",
@@ -727,7 +750,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "email_label",
                   "resourceValue": "Email",
                   "lang": "En",
@@ -735,7 +758,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "email_placeholder",
                   "resourceValue": "abc@gmail.com",
                   "lang": "En",
@@ -743,7 +766,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "password_label",
                   "resourceValue": "Password",
                   "lang": "En",
@@ -751,7 +774,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "password_placeholder",
                   "resourceValue": "your password",
                   "lang": "En",
@@ -759,7 +782,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "logo",
                   "resourceValue": "https://beta.shop-loyalty.com/images/logo.png",
                   "lang": "En",
@@ -767,7 +790,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "sign",
                   "resourceValue": "Sign into your account",
                   "lang": "En",
@@ -775,7 +798,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "req_field",
                   "resourceValue": "All the * fields are required.",
                   "lang": "En",
@@ -783,7 +806,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "remember",
                   "resourceValue": "Remember my preference",
                   "lang": "En",
@@ -791,7 +814,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "sign_me",
                   "resourceValue": "Sign In Me",
                   "lang": "En",
@@ -799,7 +822,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "client_master_label",
                   "resourceValue": "Client Master",
                   "lang": "En",
@@ -807,7 +830,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "contact_Name_label",
                   "resourceValue": "Contact Name",
                   "lang": "En",
@@ -815,7 +838,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "contact_Number_label",
                   "resourceValue": "Contact Number",
                   "lang": "En",
@@ -823,7 +846,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "IP Address_label",
                   "resourceValue": "Database IP Address",
                   "lang": "En",
@@ -831,7 +854,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "usernamee_label",
                   "resourceValue": "Username",
                   "lang": "En",
@@ -839,7 +862,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "Status_label",
                   "resourceValue": "Status",
                   "lang": "En",
@@ -847,7 +870,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "Color_label",
                   "resourceValue": "Color",
                   "lang": "En",
@@ -855,7 +878,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "Logo Link_label",
                   "resourceValue": "Logo Link",
                   "lang": "En",
@@ -863,7 +886,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "Select Theme_label",
                   "resourceValue": "Select Theme",
                   "lang": "En",
@@ -871,7 +894,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "razorpay Payment Gateway_label",
                   "resourceValue": "Razorpay Payment Gateway",
                   "lang": "En",
@@ -879,7 +902,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "staging_label",
                   "resourceValue": "Staging",
                   "lang": "En",
@@ -887,7 +910,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "key_placeholder",
                   "resourceValue": "Key",
                   "lang": "En",
@@ -895,7 +918,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "secretkey_placeholder",
                   "resourceValue": "Secret Key",
                   "lang": "En",
@@ -903,7 +926,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "production_key_label",
                   "resourceValue": "Production",
                   "lang": "En",
@@ -911,7 +934,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "add_label",
                   "resourceValue": "Add",
                   "lang": "En",
@@ -919,7 +942,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "client List_label",
                   "resourceValue": "Client List",
                   "lang": "En",
@@ -927,7 +950,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "search_here_label",
                   "resourceValue": "Search here......",
                   "lang": "En",
@@ -935,7 +958,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "export_label",
                   "resourceValue": "export",
                   "lang": "En",
@@ -943,7 +966,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "client ID_label",
                   "resourceValue": "Client ID",
                   "lang": "En",
@@ -951,7 +974,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "action_label",
                   "resourceValue": "Action",
                   "lang": "En",
@@ -959,7 +982,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "login_label",
                   "resourceValue": "Login",
                   "lang": "En",
@@ -967,7 +990,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "ipAddress",
                   "resourceValue": "IP Address",
                   "lang": "En",
@@ -975,7 +998,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "contact_Email_label",
                   "resourceValue": "Contact Email",
                   "lang": "En",
@@ -983,7 +1006,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "select_Option",
                   "resourceValue": "Selected Option:",
                   "lang": "En",
@@ -991,7 +1014,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "technical_issue",
                   "resourceValue": "We have some technical issue",
                   "lang": "En",
@@ -999,7 +1022,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "contact_Admin",
                   "resourceValue": "Please check in sometime or contact administrator",
                   "lang": "En",
@@ -1007,7 +1030,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "invalid_Email",
                   "resourceValue": "Invalid email address",
                   "lang": "En",
@@ -1015,7 +1038,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "user_Master_label",
                   "resourceValue": "User Master",
                   "lang": "En",
@@ -1023,7 +1046,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "User_list_label",
                   "resourceValue": "User list",
                   "lang": "En",
@@ -1031,7 +1054,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "mobile_label",
                   "resourceValue": "Mobile",
                   "lang": "En",
@@ -1039,7 +1062,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "role_label",
                   "resourceValue": "Role",
                   "lang": "En",
@@ -1047,7 +1070,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "client_label",
                   "resourceValue": "Client",
                   "lang": "En",
@@ -1055,7 +1078,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "required_label",
                   "resourceValue": "All the * fields are required.",
                   "lang": "En",
@@ -1063,7 +1086,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "submit_label",
                   "resourceValue": "Submit",
                   "lang": "En",
@@ -1071,7 +1094,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "role_name_label",
                   "resourceValue": "Role Name",
                   "lang": "En",
@@ -1079,7 +1102,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "clients_name_label",
                   "resourceValue": "Clients",
                   "lang": "En",
@@ -1087,7 +1110,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "update_label",
                   "resourceValue": "Update",
                   "lang": "En",
@@ -1095,7 +1118,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "number_Digit_Label",
                   "resourceValue": "Please enter 10 digit only",
                   "lang": "En",
@@ -1103,7 +1126,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "RoleMaster",
                   "resourceValue": "ROle Master",
                   "lang": "En",
@@ -1111,7 +1134,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "role-master",
                   "resourceValue": "Role Master",
                   "lang": "En",
@@ -1119,7 +1142,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "role-name",
                   "resourceValue": "Role Name",
                   "lang": "En",
@@ -1127,7 +1150,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "select-all",
                   "resourceValue": "SelectAll",
                   "lang": "En",
@@ -1135,7 +1158,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "selectall",
                   "resourceValue": "Select All",
                   "lang": "En",
@@ -1143,7 +1166,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "module-access",
                   "resourceValue": "Module Access",
                   "lang": "En",
@@ -1151,7 +1174,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "role-module-access-list",
                   "resourceValue": "Role Module Access List",
                   "lang": "En",
@@ -1159,7 +1182,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "first-name",
                   "resourceValue": "First Name",
                   "lang": "En",
@@ -1167,7 +1190,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "last-name",
                   "resourceValue": "Last Name",
                   "lang": "En",
@@ -1175,7 +1198,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "modules",
                   "resourceValue": "Modules",
                   "lang": "En",
@@ -1183,7 +1206,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "action",
                   "resourceValue": "Action",
                   "lang": "En",
@@ -1191,7 +1214,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "submit",
                   "resourceValue": "Submit",
                   "lang": "En",
@@ -1199,7 +1222,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "supplierMaster",
                   "resourceValue": "Supplier Master",
                   "lang": "En",
@@ -1207,7 +1230,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                 "clientId": "0",
-                "resourceType": "UIAdmin",
+                "resourceType": "UIMasterAdmin",
                 "resourceKey": "view",
                 "resourceValue": "View",
                 "lang": "En",
@@ -1215,7 +1238,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
             },
             {
                 "clientId": "0",
-                "resourceType": "UIAdmin",
+                "resourceType": "UIMasterAdmin",
                 "resourceKey": "add",
                 "resourceValue": "Add",
                 "lang": "En",
@@ -1223,7 +1246,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
             },
             {
                 "clientId": "0",
-                "resourceType": "UIAdmin",
+                "resourceType": "UIMasterAdmin",
                 "resourceKey": "description",
                 "resourceValue": "Description",
                 "lang": "EN",
@@ -1231,7 +1254,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
             },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "supplierClientID",
                   "resourceValue": "Supplier Client ID",
                   "lang": "En",
@@ -1239,7 +1262,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "supplierClientSecret",
                   "resourceValue": "Supplier Client Secret",
                   "lang": "En",
@@ -1247,7 +1270,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "endPoint",
                   "resourceValue": "End Point",
                   "lang": "En",
@@ -1255,7 +1278,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "select",
                   "resourceValue": "Select",
                   "lang": "En",
@@ -1263,7 +1286,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "active",
                   "resourceValue": "Active",
                   "lang": "En",
@@ -1271,7 +1294,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "nonActive",
                   "resourceValue": "Non-Active",
                   "lang": "En",
@@ -1279,7 +1302,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "authorizationCode",
                   "resourceValue": "Authorization Code",
                   "lang": "En",
@@ -1287,7 +1310,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "minThresholdAmount",
                   "resourceValue": "Min. Threshold Amount",
                   "lang": "En",
@@ -1295,7 +1318,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "customerSegment",
                   "resourceValue": "Customer Segment",
                   "lang": "En",
@@ -1303,7 +1326,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "id",
                   "resourceValue": "ID",
                   "lang": "En",
@@ -1311,7 +1334,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "segmentName",
                   "resourceValue": "Segment Name",
                   "lang": "En",
@@ -1319,7 +1342,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "currentStatus",
                   "resourceValue": "Current Status",
                   "lang": "En",
@@ -1327,7 +1350,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "date",
                   "resourceValue": "Date",
                   "lang": "En",
@@ -1335,7 +1358,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "productContentList",
                   "resourceValue": "Product Content List",
                   "lang": "En",
@@ -1343,7 +1366,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "productName",
                   "resourceValue": "Product Name",
                   "lang": "En",
@@ -1351,7 +1374,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "typeOfProduct",
                   "resourceValue": "Type Of Product",
                   "lang": "En",
@@ -1359,7 +1382,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "Supplier_List_Label",
                   "resourceValue": "Supplier List",
                   "lang": "En",
@@ -1367,7 +1390,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "supplierBrands",
                   "resourceValue": "Supplier Brands",
                   "lang": "En",
@@ -1375,7 +1398,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "selectSuppliers",
                   "resourceValue": "Select Suppliers",
                   "lang": "En",
@@ -1383,7 +1406,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "all",
                   "resourceValue": "All",
                   "lang": "En",
@@ -1391,7 +1414,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "supplierBrandLists",
                   "resourceValue": "Supplier Brand Lists",
                   "lang": "En",
@@ -1399,7 +1422,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "id",
                   "resourceValue": "ID",
                   "lang": "En",
@@ -1407,7 +1430,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "brands",
                   "resourceValue": "Brands",
                   "lang": "En",
@@ -1415,7 +1438,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "supplierMargin",
                   "resourceValue": "Supplier Margin%",
                   "lang": "En",
@@ -1423,7 +1446,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "createUpdateBrandMapping",
                   "resourceValue": "Create Category",
                   "lang": "En",
@@ -1431,7 +1454,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "category",
                   "resourceValue": "Category",
                   "lang": "En",
@@ -1439,7 +1462,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "dealUnlock",
                   "resourceValue": "Deal Unlock",
                   "lang": "En",
@@ -1447,7 +1470,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "selectStatus",
                   "resourceValue": "Select Status",
                   "lang": "En",
@@ -1455,7 +1478,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "logout",
                   "resourceValue": "Logout",
                   "lang": "En",
@@ -1463,7 +1486,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "inActive",
                   "resourceValue": "In-Active",
                   "lang": "En",
@@ -1471,7 +1494,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "points",
                   "resourceValue": "Points",
                   "lang": "En",
@@ -1479,7 +1502,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "products",
                   "resourceValue": "Products",
                   "lang": "En",
@@ -1487,7 +1510,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "customers",
                   "resourceValue": "Customers",
                   "lang": "En",
@@ -1495,7 +1518,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "price",
                   "resourceValue": "Price",
                   "lang": "En",
@@ -1503,7 +1526,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "link_label",
                   "resourceValue": "Link",
                   "lang": "En",
@@ -1511,7 +1534,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "image",
                   "resourceValue": "Image",
                   "lang": "En",
@@ -1519,7 +1542,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "months",
                   "resourceValue": "Monthly",
                   "lang": "En",
@@ -1527,7 +1550,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "daily",
                   "resourceValue": "Daily",
                   "lang": "En",
@@ -1535,7 +1558,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "today",
                   "resourceValue": "Today",
                   "lang": "En",
@@ -1543,7 +1566,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "field_Name_Label",
                   "resourceValue": "Field Name",
                   "lang": "En",
@@ -1551,7 +1574,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "field_Value_Label",
                   "resourceValue": "Field Value",
                   "lang": "En",
@@ -1559,7 +1582,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "mode_Label",
                   "resourceValue": "Mode",
                   "lang": "En",
@@ -1567,7 +1590,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "database_User_ID_Label",
                   "resourceValue": "Database User ID",
                   "lang": "En",
@@ -1575,7 +1598,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "database_User_Pass_Label",
                   "resourceValue": " Database User Password",
                   "lang": "En",
@@ -1583,7 +1606,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "categoryList",
                   "resourceValue": "Category List",
                   "lang": "En",
@@ -1591,7 +1614,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "Theme Details_Label",
                   "resourceValue": " Theme Details",
                   "lang": "En",
@@ -1599,7 +1622,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": " Database Credentials_Label",
                   "resourceValue": "Database Credentials",
                   "lang": "En",
@@ -1607,7 +1630,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "Theme_Details_Label",
                   "resourceValue": " Theme Details",
                   "lang": "En",
@@ -1615,7 +1638,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": " Database_Credentials_Label",
                   "resourceValue": "Database_Credentials",
                   "lang": "En",
@@ -1623,7 +1646,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": " Database_Label",
                   "resourceValue": "Database Credentials",
                   "lang": "En",
@@ -1631,7 +1654,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "heading",
                   "resourceValue": "Brand Catalogue",
                   "lang": "En",
@@ -1639,7 +1662,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "headingbrandcatalogue",
                   "resourceValue": "Brand Catalogue",
                   "lang": "En",
@@ -1647,7 +1670,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "brandname1",
                   "resourceValue": "Amazon",
                   "lang": "En",
@@ -1655,7 +1678,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "image",
                   "resourceValue": "Image",
                   "lang": "En",
@@ -1663,7 +1686,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "sku",
                   "resourceValue": "SKU",
                   "lang": "En",
@@ -1671,7 +1694,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "name",
                   "resourceValue": "Name",
                   "lang": "En",
@@ -1679,7 +1702,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "minprice",
                   "resourceValue": "Min Price",
                   "lang": "En",
@@ -1687,7 +1710,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "maxprice",
                   "resourceValue": "Max Price",
                   "lang": "En",
@@ -1695,7 +1718,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "price",
                   "resourceValue": "Price",
                   "lang": "En",
@@ -1703,7 +1726,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "type",
                   "resourceValue": "Type",
                   "lang": "En",
@@ -1711,7 +1734,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "pricerange",
                   "resourceValue": "Price Range",
                   "lang": "En",
@@ -1719,7 +1742,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "pricedenominations",
                   "resourceValue": "Price Denominations",
                   "lang": "En",
@@ -1727,7 +1750,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "termsandconditions",
                   "resourceValue": "*Terms and Conditions",
                   "lang": "En",
@@ -1735,7 +1758,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "storelocator",
                   "resourceValue": "*Store Locator",
                   "lang": "En",
@@ -1743,7 +1766,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "supplier",
                   "resourceValue": "Supplier",
                   "lang": "En",
@@ -1751,7 +1774,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "client",
                   "resourceValue": "Client",
                   "lang": "En",
@@ -1759,7 +1782,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "date",
                   "resourceValue": "Date",
                   "lang": "En",
@@ -1767,7 +1790,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "ordersupplier",
                   "resourceValue": "Supplier",
                   "lang": "En",
@@ -1775,7 +1798,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "db_name",
                   "resourceValue": "Database Name",
                   "lang": "En",
@@ -1783,7 +1806,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "platform_Domain_Url",
                   "resourceValue": "Platform Domain Url",
                   "lang": "En",
@@ -1791,7 +1814,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "statusWise",
                   "resourceValue": "Status Wise",
                   "lang": "En",
@@ -1799,7 +1822,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "sortedBy",
                   "resourceValue": "Sorted by",
                   "lang": "En",
@@ -1807,7 +1830,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "ordermarginvalue",
                   "resourceValue": "Total Margin Value",
                   "lang": "En",
@@ -1815,7 +1838,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "no_record_found",
                   "resourceValue": "No Record Found",
                   "lang": "En",
@@ -1823,7 +1846,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "productSectionList",
                   "resourceValue": "Product Section List",
                   "lang": "En",
@@ -1831,7 +1854,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "no_record_available",
                   "resourceValue": "Record not available",
                   "lang": "En",
@@ -1839,7 +1862,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "productSection",
                   "resourceValue": "Product Section",
                   "lang": "En",
@@ -1847,7 +1870,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "required-field",
                   "resourceValue": "*",
                   "lang": "En",
@@ -1855,7 +1878,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "checkbox_error",
                   "resourceValue": "At least one module must be selected.",
                   "lang": "En",
@@ -1863,7 +1886,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "sectionName",
                   "resourceValue": "Section Name",
                   "lang": "En",
@@ -1871,7 +1894,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "brand_Detail",
                   "resourceValue": "Brand Detail",
                   "lang": "En",
@@ -1879,7 +1902,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "action",
                   "resourceValue": "Action",
                   "lang": "En",
@@ -1887,7 +1910,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "admin_Label",
                   "resourceValue": "Admin",
                   "lang": "En",
@@ -1895,7 +1918,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersid",
                   "resourceValue": "Order ID",
                   "lang": "En",
@@ -1903,7 +1926,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersname",
                   "resourceValue": "Name",
                   "lang": "En",
@@ -1911,7 +1934,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersemail",
                   "resourceValue": "Email",
                   "lang": "En",
@@ -1919,7 +1942,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersmobile",
                   "resourceValue": "Mobile",
                   "lang": "En",
@@ -1927,7 +1950,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedorderscartvalue",
                   "resourceValue": "Total Cart Value",
                   "lang": "En",
@@ -1935,7 +1958,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "addCoupon",
                   "resourceValue": "Add Coupon",
                   "lang": "En",
@@ -1943,7 +1966,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersdate",
                   "resourceValue": "Date of Order",
                   "lang": "En",
@@ -1951,7 +1974,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersorderamount",
                   "resourceValue": "Total Order Amount",
                   "lang": "En",
@@ -1959,7 +1982,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedorderspaymentid",
                   "resourceValue": "Payment ID",
                   "lang": "En",
@@ -1967,7 +1990,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "balance_Available",
                   "resourceValue": "Balance Available Amount",
                   "lang": "En",
@@ -1975,7 +1998,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedorderspoints",
                   "resourceValue": "Points Redeemed",
                   "lang": "En",
@@ -1983,7 +2006,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "sign_me_label",
                   "resourceValue": "Sign Me In",
                   "lang": "En",
@@ -1991,7 +2014,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedorderssno",
                   "resourceValue": "S.NO",
                   "lang": "En",
@@ -1999,7 +2022,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "supplier_API",
                   "resourceValue": "Supplier API Details",
                   "lang": "En",
@@ -2007,7 +2030,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersbrandname",
                   "resourceValue": "Brand Name",
                   "lang": "En",
@@ -2015,7 +2038,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersfacevalue",
                   "resourceValue": "Face Value",
                   "lang": "En",
@@ -2023,7 +2046,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersqty",
                   "resourceValue": "QTY",
                   "lang": "En",
@@ -2031,7 +2054,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedorderssku",
                   "resourceValue": "SKU",
                   "lang": "En",
@@ -2039,7 +2062,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "add_More",
                   "resourceValue": "Add More",
                   "lang": "En",
@@ -2047,7 +2070,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersdisamount",
                   "resourceValue": "Discounted Amt.",
                   "lang": "En",
@@ -2055,7 +2078,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedorderssuborderid",
                   "resourceValue": "Suborder ID",
                   "lang": "En",
@@ -2063,7 +2086,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersreferenceid",
                   "resourceValue": "Reference ID",
                   "lang": "En",
@@ -2071,7 +2094,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedorderssuborderstatus",
                   "resourceValue": "Sub-Order Status",
                   "lang": "En",
@@ -2079,7 +2102,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "failedordersamount",
                   "resourceValue": "Amount",
                   "lang": "En",
@@ -2087,7 +2110,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "delete",
                   "resourceValue": "Delete",
                   "lang": "En",
@@ -2095,7 +2118,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "delete_Button",
                   "resourceValue": "Delete",
                   "lang": "En",
@@ -2103,7 +2126,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "is_Client_role",
                   "resourceValue": "Is Client Role",
                   "lang": "En",
@@ -2111,7 +2134,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "customerlist",
                   "resourceValue": "Customer List",
                   "lang": "En",
@@ -2119,7 +2142,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "customerlistname",
                   "resourceValue": "Name",
                   "lang": "En",
@@ -2127,7 +2150,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "customerlistemail",
                   "resourceValue": "Email",
                   "lang": "En",
@@ -2135,7 +2158,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "customerlistphone",
                   "resourceValue": "Phone",
                   "lang": "En",
@@ -2143,7 +2166,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "customerlistjoined",
                   "resourceValue": "Joined",
                   "lang": "En",
@@ -2151,7 +2174,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "emaileventmaster",
                   "resourceValue": "Email Event Master",
                   "lang": "En",
@@ -2159,7 +2182,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "emaileventmastername",
                   "resourceValue": "Event Name",
                   "lang": "En",
@@ -2167,7 +2190,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "emaileventmastersms",
                   "resourceValue": "SMS Body",
                   "lang": "En",
@@ -2175,7 +2198,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "emaileventmastersubject",
                   "resourceValue": "Subject",
                   "lang": "En",
@@ -2183,7 +2206,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "emaileventmastermail",
                   "resourceValue": "Mail Body",
                   "lang": "En",
@@ -2191,7 +2214,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "emaileventmasterkeywords",
                   "resourceValue": "Keywords",
                   "lang": "En",
@@ -2199,7 +2222,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "emaileventmastersno",
                   "resourceValue": "S.NO",
                   "lang": "En",
@@ -2207,7 +2230,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "emaileventmasteraction",
                   "resourceValue": "Action",
                   "lang": "En",
@@ -2215,7 +2238,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "emaileventmasterdate",
                   "resourceValue": "Date",
                   "lang": "En",
@@ -2223,7 +2246,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "role_Create_Label",
                   "resourceValue": "Role created successfully",
                   "lang": "En",
@@ -2231,7 +2254,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "role_Updated_Label",
                   "resourceValue": "Role updated successfully",
                   "lang": "En",
@@ -2239,7 +2262,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "graph_Data_Label",
                   "resourceValue": "Graph data is based on full system manners",
                   "lang": "En",
@@ -2247,7 +2270,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "day_Label",
                   "resourceValue": "than last day",
                   "lang": "En",
@@ -2255,7 +2278,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "role_Req_Label",
                   "resourceValue": "Role Name is required.",
                   "lang": "En",
@@ -2263,7 +2286,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "category_deleted",
                   "resourceValue": "Category Deleted Successfully",
                   "lang": "En",
@@ -2271,7 +2294,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "not_Found",
                   "resourceValue": "Not Found",
                   "lang": "En",
@@ -2279,7 +2302,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "select_role",
                   "resourceValue": "Please select a role",
                   "lang": "En",
@@ -2287,7 +2310,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "select_Client",
                   "resourceValue": "Please select a client",
                   "lang": "En",
@@ -2295,7 +2318,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "supplier_products",
                   "resourceValue": "Supplier Products",
                   "lang": "En",
@@ -2303,7 +2326,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "field_Required",
                   "resourceValue": "This field is required",
                   "lang": "En",
@@ -2311,7 +2334,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "error_Occurred",
                   "resourceValue": "An error occurred",
                   "lang": "En",
@@ -2319,7 +2342,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "status",
                   "resourceValue": "Status",
                   "lang": "En",
@@ -2327,7 +2350,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "clientbrandlistheading",
                   "resourceValue": "Supplier Brand (Filter);",
                   "lang": "En",
@@ -2335,7 +2358,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "clientbrandlistname",
                   "resourceValue": "Supplier Name",
                   "lang": "En",
@@ -2343,7 +2366,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "dealOffer",
                   "resourceValue": "Deal & Offer",
                   "lang": "En",
@@ -2351,7 +2374,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": " couponcode",
                   "resourceValue": "Coupon code",
                   "lang": "En",
@@ -2359,7 +2382,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "typeOfCoupon",
                   "resourceValue": "Type of coupon",
                   "lang": "En",
@@ -2367,7 +2390,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "redemationlink",
                   "resourceValue": "Redemation link",
                   "lang": "En",
@@ -2375,7 +2398,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "clientbrandlistaction",
                   "resourceValue": "Action",
                   "lang": "En",
@@ -2383,7 +2406,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "validityDate",
                   "resourceValue": "Validity Date",
                   "lang": "En",
@@ -2391,7 +2414,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "termsAndCondition",
                   "resourceValue": "Terms and condition",
                   "lang": "En",
@@ -2399,7 +2422,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "fieldNameNotEmpty",
                   "resourceValue": "Field name cannot be empty",
                   "lang": "En",
@@ -2407,7 +2430,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "description_place",
                   "resourceValue": "description",
                   "lang": "En",
@@ -2415,7 +2438,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "allocate.",
                   "resourceValue": "Allocate",
                   "lang": "En",
@@ -2423,7 +2446,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "updateSuccessfully",
                   "resourceValue": "Update Successfully.",
                   "lang": "En",
@@ -2431,15 +2454,15 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               },
               {
                   "clientId": "0",
-                  "resourceType": "UIAdmin",
+                  "resourceType": "UIMasterAdmin",
                   "resourceKey": "addedSuccessfully",
                   "resourceValue": "Added Successfully.",
                   "lang": "En",
                   "id": 227
               },
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
