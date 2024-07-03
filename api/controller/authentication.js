@@ -697,12 +697,12 @@ router.get("/getRoleMaster", async (req, res) => {
     res.json({
       response: [
         {
-          id:"1",
+          id:11,
           name: "Client Role",
           modules:["Dashboard","Customer Segment"]
         },
         {
-          id:"2",
+          id:14,
           name: "Admin Role",
           modules:["Dashboard","Customer Segment","Product Content List","Product Section","Add Coupon","Add Bulk Coupon", "Dynamic Coupon","Coupon List","Category List","Category Master","Deal Management","Deal List","Deal To Segment","Compaign Master","Role Master","Client Master","User Master"]
         }
