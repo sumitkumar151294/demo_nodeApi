@@ -776,8 +776,8 @@ router.get("/getClientMaster", async (req, res) => {
           
         },
       ],
-      httpStatusCode: "201",
-      errorCode: "201",
+      httpStatusCode: "200",
+      errorCode: "200",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
