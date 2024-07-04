@@ -26,9 +26,9 @@ router.post("/login", async (req, res) => {
           userId: 2
         },
       ],
-      errorCode: "200",
+      errorCode: "201",
       errorMessage: "Login Sucessfully",
-      httpStatusCode: "200",
+      httpStatusCode: "201",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -413,8 +413,8 @@ router.put("/user-role-module-access", async (req, res) => {
           editAccess: true,
         }
       ],
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -607,8 +607,8 @@ router.post("/postProductSection", async (req, res) => {
           date: "15/06,2024"
         },
       ],
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
       errorMessage: "Submitted Successfully",
     });
   } catch (err) {
@@ -671,8 +671,8 @@ router.post("/roleMaster", async (req, res) => {
           roleId: "43",
         },
       ],
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
       errorMessage: "Created Successfully",
     });
   } catch (err) {
@@ -683,8 +683,8 @@ router.post("/roleMaster", async (req, res) => {
 router.post("/user-role-module-access", async (req, res) => {
   try {
     res.json({
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
       errorMessage: "Created Successfully",
     });
   } catch (err) {
@@ -729,8 +729,8 @@ router.put("/roleMaster", async (req, res) => {
           modules:["Dashboard","Customer Segment","Product Content List","Product Section","Add Coupon","Add Bulk Coupon", "Dynamic Coupon","Coupon List","Category List","Category Master","Deal Management","Deal List","Deal To Segment","Compaign Master","Role Master","Client Master","User Master"]
         }
       ],
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
       errorMessage: "Updated Successfully",
     });
   } catch (err) {
@@ -746,8 +746,8 @@ router.post("/clientMaster", async (req, res) => {
           id:"86"
         }
       ],
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
       errorMessage: "Submitted Successfully",
     });
   } catch (err) {
@@ -776,8 +776,8 @@ router.get("/getClientMaster", async (req, res) => {
           
         },
       ],
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -804,8 +804,8 @@ router.put("/clientMaster", async (req, res) => {
           
         },
       ],
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -823,8 +823,8 @@ router.post("/userMaster", async (req, res) => {
           client:"Sumit kumar"
         }
       ],
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
       errorMessage: "Submitted Successfully",
     });
   } catch (err) {
@@ -876,8 +876,8 @@ router.post("/addCoupon", async (req, res) => {
           date:"30/07/2024",
         },
       ],
-      httpStatusCode: "200",
-      errorCode: "200",
+      httpStatusCode: "201",
+      errorCode: "201",
       errorMessage: "Submitted Successfully",
     });
   } catch (err) {
@@ -885,24 +885,24 @@ router.post("/addCoupon", async (req, res) => {
   }
 });
 
-router.post("/generate-auth-token", async (req, res) => {
-  try {
-    res.json({
-       response: [
-        {
-            clientId: "0",
-            token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAiLCJwYXJ0bmVyLWNvZGUiOiJVSUFkbWluIiwianRpIjoiN2FmNjYyNmYtYjAxOS00NDZiLWIzZWEtMzEzNTY4ODliNTJkIiwiZXhwIjoxNzE4NzAwNDE2LCJpc3MiOiJhYmMiLCJhdWQiOiJ2ZGZzZ2Rmc2dfR0ZzZGZnX0dGRFNnX0dGZHNmR19ERlNHR1NERlNERkdfZ19Hc2RmR19TZGZHX0RoR0ZIX2dmIn0.nkRKUpcEJUHxfKAYwinqmf3ltjVtGwhZ8jK-Z90qN2U",
-            expiryTime: "2024-06-18T08:46:56.12469Z"
-        }
-      ],
-      httpStatusCode: "200",
-      errorCode: "200",
-      errorMessage: "",
-    });
-  } catch (err) {
-    res.status(500).json({ error: "Internal Server Error" });
-  }
-});
+// router.post("/generate-auth-token", async (req, res) => {
+//   try {
+//     res.json({
+//        response: [
+//         {
+//             clientId: "0",
+//             token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAiLCJwYXJ0bmVyLWNvZGUiOiJVSUFkbWluIiwianRpIjoiN2FmNjYyNmYtYjAxOS00NDZiLWIzZWEtMzEzNTY4ODliNTJkIiwiZXhwIjoxNzE4NzAwNDE2LCJpc3MiOiJhYmMiLCJhdWQiOiJ2ZGZzZ2Rmc2dfR0ZzZGZnX0dGRFNnX0dGZHNmR19ERlNHR1NERlNERkdfZ19Hc2RmR19TZGZHX0RoR0ZIX2dmIn0.nkRKUpcEJUHxfKAYwinqmf3ltjVtGwhZ8jK-Z90qN2U",
+//             expiryTime: "2024-06-18T08:46:56.12469Z"
+//         }
+//       ],
+//       httpStatusCode: "200",
+//       errorCode: "200",
+//       errorMessage: "",
+//     });
+//   } catch (err) {
+//     res.status(500).json({ error: "Internal Server Error" });
+//   }
+// });
 router.get("/translation-content-get-by-clientid", async (req, res) => {
   try {
     res.json({
