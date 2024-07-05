@@ -790,7 +790,6 @@ router.get("/getClientMaster", async (req, res) => {
       ],
       httpStatusCode: "200",
       errorCode: "200",
-      errorMessage: "Updatted Successfully",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -819,6 +818,7 @@ router.put("/clientMaster", async (req, res) => {
       ],
       httpStatusCode: "201",
       errorCode: "201",
+      errorMessage: "Updatted Successfully",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
