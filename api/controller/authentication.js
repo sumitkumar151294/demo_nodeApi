@@ -760,24 +760,37 @@ router.get("/getClientMaster", async (req, res) => {
     res.json({
       response: [
         {
-          name: "Sumit kumar",
-          number:"8791711111",
-          email:"sumitji@gmail.com",
-          id:"1",
+          contactName: "Sumit kumar",
+          contactNumber:"8791711111",
+          contactEmail:"sumitji@gmail.com",
+          id:1,
           status:true,
-
+          contactplatformDomainUrl: "https://www.w3schools.com/",
+          dbName: "dfghjk",
+          ipAddress: "13.232.112.223d",
+          logo: "https://www.w3schools.com/",
+          password: "dsfghgjhkj",
+          theme: "Theme 2",
+          username: "anu"
         },
          {
-          name: "Ankita",
-          number:"8791456723",
-          email:"ankita@gmail.com",
-          id:"4",
+          contactName: "Ankita",
+          contactNumber:"8791456723",
+          contactEmail:"ankita@gmail.com",
+          id:4,
           status:false,
-          
+          contactplatformDomainUrl: "https://www.w3schools.com/",
+          dbName: "dfghjk",
+          ipAddress: "13.232.112.223d",
+          logo: "https://www.w3schools.com/",
+          password: "dsfghgjhkj",
+          theme: "Theme 2",
+          username: "anu"
         },
       ],
       httpStatusCode: "200",
       errorCode: "200",
+      errorMessage: "Updatted Successfully",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
@@ -791,7 +804,7 @@ router.put("/clientMaster", async (req, res) => {
           name: "Sumit kumar",
           number:"8791711111",
           email:"sumitji@gmail.com",
-          id:"1",
+          id:1,
           status:true,
 
         },
@@ -799,7 +812,7 @@ router.put("/clientMaster", async (req, res) => {
           name: "Ankita",
           number:"8791456723",
           email:"ankita@gmail.com",
-          id:"4",
+          id:4,
           status:false,
           
         },
