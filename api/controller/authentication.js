@@ -818,7 +818,7 @@ router.put("/clientMaster", async (req, res) => {
       ],
       httpStatusCode: "201",
       errorCode: "201",
-      errorMessage: "Updatted Successfully",
+      errorMessage: "Updated Successfully",
     });
   } catch (err) {
     res.status(500).json({ error: "Internal Server Error" });
