@@ -133,6 +133,18 @@ router.get("/module", async (req, res) => {
           name: "User Master",
           icon: "userMaster",
           routePath:"/userMaster"
+        },
+        {
+          id:17,
+          name: "Section Master",
+          icon: "userMaster",
+          routePath:"/sectionMaster"
+        },
+        {
+          id:18,
+          name: "Module Master",
+          icon: "userMaster",
+          routePath:"/moduleMaster"
         }
       ],
       httpStatusCode: "200",
