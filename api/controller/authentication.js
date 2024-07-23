@@ -284,6 +284,22 @@ router.get("/user-role-module-access", async (req, res) => {
           viewAccess: true,
           addAccess: true,
           editAccess: true,
+        },
+        {
+          id:17,
+          roleId: 14,
+          moduleId: 17,
+          viewAccess: true,
+          addAccess: true,
+          editAccess: true,
+        },
+        {
+          id:18,
+          roleId: 14,
+          moduleId: 18,
+          viewAccess: true,
+          addAccess: true,
+          editAccess: true,
         }
       ],
       httpStatusCode: "200",
