@@ -915,7 +915,7 @@ router.put("/userMaster", async (req, res) => {
     res.json({
       response: [
         {
-          roleName:[11],
+          roleName:11,
           email:"sumitji@gmail.com",
           number:"8791711111",
           name: "Ankita Singh",
@@ -935,21 +935,21 @@ router.get("/getUserMaster", async (req, res) => {
     res.json({
       response: [
         {
-          roleName: [{name:"Client Role",id:11}],
+          roleName: "Client Role",
           email:"sumitji@gmail.com",
           number:"8791711111",
           firstName:"Sumit",
           lastName:"kumar",
         },
         {
-          roleName: [{name:"Admin Role",id:14}],
+          roleName: "Admin Role",
           email:"abc@gmail.com",
           number:"9879175671",
           firstName:"Ankit",
           lastName:"kumar",
         },
         {
-          roleName: [{name:"Client Role",id:11}],
+          roleName: "Client Role",
           email:"sumitkumar@gmail.com",
           number:"3214567890",
           firstName: "Anjali",
