@@ -935,21 +935,21 @@ router.get("/getUserMaster", async (req, res) => {
     res.json({
       response: [
         {
-          roleName: ["Client Role"],
+          roleName: [{name:"Client Role",id:11}],
           email:"sumitji@gmail.com",
           number:"8791711111",
           firstName:"Sumit",
           lastName:"kumar",
         },
         {
-          roleName: ["Admin Role"],
+          roleName: [{name:"Admin Role",id:14}],
           email:"abc@gmail.com",
           number:"9879175671",
           firstName:"Ankit",
           lastName:"kumar",
         },
         {
-          roleName: ["Client Role"],
+          roleName: [{name:"Client Role",id:11}],
           email:"sumitkumar@gmail.com",
           number:"3214567890",
           firstName: "Anjali",
