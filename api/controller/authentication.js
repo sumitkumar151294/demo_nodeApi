@@ -910,6 +910,26 @@ router.post("/userMaster", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+router.put("/userMaster", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          roleName: "Client Role",
+          email:"sumitji@gmail.com",
+          number:"8791711111",
+          name: "Ankita Singh",
+          client:"Sumit kumar"
+        }
+      ],
+      httpStatusCode: "201",
+      errorCode: "201",
+      errorMessage: "Updated Successfully",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 router.get("/getUserMaster", async (req, res) => {
   try {
     res.json({
@@ -918,22 +938,22 @@ router.get("/getUserMaster", async (req, res) => {
           roleName: "Client Role",
           email:"sumitji@gmail.com",
           number:"8791711111",
-          name: "username",
-          client:"Sumit kumar"
+          firstName: "Sumit",
+          lastName:"kumar",
         },
         {
-          roleName: "Wert Role",
+          roleName: "Admin Role",
           email:"abc@gmail.com",
           number:"9879175671",
-          name: "dfghj",
-          client:"clientname"
+          firstName: "Ankit",
+          lastName:"kumar",
         },
         {
           roleName: "Client Role",
           email:"sumitkumar@gmail.com",
           number:"3214567890",
-          name: "abc02",
-          client:"Sumit kumar"
+          firstName: "Anjali",
+          lastName:"Singh",
         }
       ],
       httpStatusCode: "200",
