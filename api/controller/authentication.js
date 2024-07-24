@@ -145,6 +145,12 @@ router.get("/module", async (req, res) => {
           name: "Module Master",
           icon: "userMaster",
           routePath:"/moduleMaster"
+        },
+        {
+          id:19,
+          name: "Deal Category",
+          icon: "userMaster",
+          routePath:"/dealCategory"
         }
       ],
       httpStatusCode: "200",
@@ -300,6 +306,14 @@ router.get("/user-role-module-access", async (req, res) => {
           viewAccess: true,
           addAccess: true,
           editAccess: true,
+        },
+        {
+          id:19,
+          roleId: 14,
+          moduleId: 19,
+          viewAccess: true,
+          addAccess: true,
+          editAccess: true,
         }
       ],
       httpStatusCode: "200",
@@ -452,6 +466,14 @@ router.put("/user-role-module-access", async (req, res) => {
           id:18,
           roleId: 14,
           moduleId: 18,
+          viewAccess: true,
+          addAccess: true,
+          editAccess: true,
+        },
+        {
+          id:19,
+          roleId: 14,
+          moduleId: 19,
           viewAccess: true,
           addAccess: true,
           editAccess: true,
