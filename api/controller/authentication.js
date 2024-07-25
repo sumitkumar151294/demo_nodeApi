@@ -34,6 +34,25 @@ router.post("/login", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+router.post("/module", async (req, res) => {
+  try {
+    res.json({
+      response: [
+        {
+          id:1,
+          name: "Dashboard",
+          icon: "dashboard",
+          routePath:"/dashboard"
+        },
+      ],
+      errorCode: "201",
+      errorMessage: "Submit Sucessfully",
+      httpStatusCode: "201",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 
 router.get("/module", async (req, res) => {
   try {
