@@ -176,6 +176,18 @@ router.get("/module", async (req, res) => {
           name: "Deal",
           icon: "userMaster",
           routePath:"/deal"
+        },
+        {
+          id:21,
+          name: "Deal Coupon",
+          icon: "userMaster",
+          routePath:"/dealCoupon"
+        },
+        {
+          id:22,
+          name: "Deal Coupon Code",
+          icon: "userMaster",
+          routePath:"/dealCouponCode"
         }
       ],
       httpStatusCode: "200",
@@ -344,6 +356,22 @@ router.get("/user-role-module-access", async (req, res) => {
           id:20,
           roleId: 14,
           moduleId: 20,
+          viewAccess: true,
+          addAccess: true,
+          editAccess: true,
+        },
+        {
+          id:21,
+          roleId: 14,
+          moduleId: 21,
+          viewAccess: true,
+          addAccess: true,
+          editAccess: true,
+        },
+        {
+          id:21,
+          roleId: 14,
+          moduleId: 21,
           viewAccess: true,
           addAccess: true,
           editAccess: true,
