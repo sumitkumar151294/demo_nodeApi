@@ -20,7 +20,7 @@ router.post("/login", async (req, res) => {
     res.json({
       response: [
         {
-          accessClientIds: "1",
+          accessClientIds: 4,
           adminRoleId : 14,
           clientRoleId: 4,
           userId: 2
@@ -1455,14 +1455,14 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
                   "clientId": "0",
                   "resourceType": "UIMasterAdmin",
                   "resourceKey": "RoleMaster",
-                  "resourceValue": "ROle Master",
+                  "resourceValue": "Role Master",
                   "lang": "En",
                   "id": 58
               },
               {
                   "clientId": "0",
                   "resourceType": "UIMasterAdmin",
-                  "resourceKey": "role-master",
+                  "resourceKey": "role_master",
                   "resourceValue": "Role Master",
                   "lang": "En",
                   "id": 59
