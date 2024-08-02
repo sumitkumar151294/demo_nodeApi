@@ -1470,7 +1470,7 @@ router.get("/translation-content-get-by-clientid", async (req, res) => {
               {
                   "clientId": "0",
                   "resourceType": "UIMasterAdmin",
-                  "resourceKey": "role-name",
+                  "resourceKey": "role_name",
                   "resourceValue": "Role Name",
                   "lang": "En",
                   "id": 60
